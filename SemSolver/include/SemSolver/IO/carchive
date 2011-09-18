@@ -1,0 +1,19 @@
+#ifndef CARCHIVE
+#define CARCHIVE
+
+//! \brief Namespace wrapping libarchive C library
+
+#if defined _WIN32 || defined _WIN64
+#   include <windows.h>
+#endif
+
+namespace archive
+{
+    extern "C"
+    {
+#include <archive.h>
+#include <archive_entry.h>
+    };
+}
+
+#endif // CARCHIVE

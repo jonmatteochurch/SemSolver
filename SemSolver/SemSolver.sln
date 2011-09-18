@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver-GUI", "src\gui\gui.vcproj", "{B6478290-F2E3-45DC-A75F-273465281541}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F3476317-7D37-4913-B310-581672253C6F} = {F3476317-7D37-4913-B310-581672253C6F}
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C} = {E877D41A-A012-4DAC-9C64-E1A536B33C9C}
+		{75251420-54E9-44D5-A1DD-9BB03756B209} = {75251420-54E9-44D5-A1DD-9BB03756B209}
+		{F4E3B66E-A49B-4507-83D0-FAA2F8DC8CA9} = {F4E3B66E-A49B-4507-83D0-FAA2F8DC8CA9}
+		{555F07A1-DB0B-4214-BDD8-2C651BE43922} = {555F07A1-DB0B-4214-BDD8-2C651BE43922}
+		{B84BFCB0-35E8-419D-9CEF-5775955BDA60} = {B84BFCB0-35E8-419D-9CEF-5775955BDA60}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver", "src\lib\semsolver\semsolver.vcproj", "{E877D41A-A012-4DAC-9C64-E1A536B33C9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver-Assembler", "src\lib\semsolver-assembler\semsolver-assembler.vcproj", "{F3476317-7D37-4913-B310-581672253C6F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C} = {E877D41A-A012-4DAC-9C64-E1A536B33C9C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver-IO", "src\lib\semsolver-io\semsolver-io.vcproj", "{555F07A1-DB0B-4214-BDD8-2C651BE43922}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C} = {E877D41A-A012-4DAC-9C64-E1A536B33C9C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver-PostProcessor", "src\lib\semsolver-postprocessor\semsolver-postprocessor.vcproj", "{B84BFCB0-35E8-419D-9CEF-5775955BDA60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C} = {E877D41A-A012-4DAC-9C64-E1A536B33C9C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver-PreProcessor", "src\lib\semsolver-preprocessor\semsolver-preprocessor.vcproj", "{75251420-54E9-44D5-A1DD-9BB03756B209}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C} = {E877D41A-A012-4DAC-9C64-E1A536B33C9C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemSolver-Solver", "src\lib\semsolver-solver\semsolver-solver.vcproj", "{F4E3B66E-A49B-4507-83D0-FAA2F8DC8CA9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C} = {E877D41A-A012-4DAC-9C64-E1A536B33C9C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6478290-F2E3-45DC-A75F-273465281541}.Release|Win32.ActiveCfg = Release|Win32
+		{B6478290-F2E3-45DC-A75F-273465281541}.Release|Win32.Build.0 = Release|Win32
+		{E877D41A-A012-4DAC-9C64-E1A536B33C9C}.Release|Win32.ActiveCfg = Default|Win32
+		{F3476317-7D37-4913-B310-581672253C6F}.Release|Win32.ActiveCfg = Default|Win32
+		{555F07A1-DB0B-4214-BDD8-2C651BE43922}.Release|Win32.ActiveCfg = Release|Win32
+		{555F07A1-DB0B-4214-BDD8-2C651BE43922}.Release|Win32.Build.0 = Release|Win32
+		{B84BFCB0-35E8-419D-9CEF-5775955BDA60}.Release|Win32.ActiveCfg = Default|Win32
+		{75251420-54E9-44D5-A1DD-9BB03756B209}.Release|Win32.ActiveCfg = Default|Win32
+		{F4E3B66E-A49B-4507-83D0-FAA2F8DC8CA9}.Release|Win32.ActiveCfg = Default|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,163 @@
+________________________________________________________________________________
+
+   REQUIRED LIBRARIES
+________________________________________________________________________________
+
+BOOST
+
+The Boost C++ libraries are a set of free software  libraries  that  extend  the 
+functionality of C++.
+Most of the Boost libraries are  licensed  under  the  Boost  Software  License, 
+designed to allow Boost to be used  with  both  free  and  proprietary  software 
+projects.
+
+License   Boost Software License
+Website   http://www.boost.org/
+
+Test version
+1.47.0  (Windows precompiled 32-bit binaries at http://www.boostpro.com)
+________________________________________________________________________________
+
+CGAL
+
+Computational Geometry Algorithms Library
+The goal of the CGAL Open Source Project is to provide easy access to  efficient 
+and reliable geometric algorithms in the form of a C++ library.  
+
+License   LGPL/QPL
+Website   http://www.cgal.org/
+
+Test Version
+3.8
+________________________________________________________________________________
+
+TNT/Jama
+
+The Template Numerical Toolkit (or TNT) is a software library  for  manipulating 
+vectors and matrices in C++ created by the U.S. National Institute of  Standards 
+and Technology. TNT provides the  fundamental  linear  algebra  operations  (for 
+example, matrix multiplication). TNT is analogous to the BLAS  library  used  by 
+LAPACK. 
+Higher  level   algorithms,   such   as  LU  decomposition  and  singular  value 
+decomposition, are provided by JAMA, also developed at NIST, which uses TNT.
+
+License	  Public domain
+Website	  http://math.nist.gov/tnt/
+
+Test Version
+1.2.6 / 1.2.5
+________________________________________________________________________________
+
+Libarchive
+
+C library and command-line tools for reading and writing tar,  cpio,  zip,  ISO, 
+and other archive formats.
+
+License   New BSD License
+Website   http://code.google.com/p/libarchive/
+
+Test Version
+2.8.4
+________________________________________________________________________________
+
+Qt
+
+Qt is a cross-platform application framework that is widely used for developing application software with a graphical user interface (GUI), and also used for developing non-GUI programs such as command-line tools and consoles for servers.
+
+License   GNU LGPL / GNU GPL / Q Public License
+WebSite   http://qt.nokia.com
+
+Test Version
+4.7.2
+
+________________________________________________________________________________
+
+Qwt
+
+Qwt or Qt Widgets for Technical Applications is a set of custom Qt widgets,  GUI 
+Components and utility classes which are primarily useful for  programs  with  a 
+technical background. Beside a 2D  plot  widget  it  provides  scales,  sliders, 
+dials, compasses, thermometers, wheels  and  knobs to control or display values, 
+arrays, or ranges of type double.
+
+License   Qwt Licens Version 1.0
+WebSite   http://qwt.sourceforge.net/
+
+Test Version
+6.0.1
+________________________________________________________________________________
+
+QwtPlot3D
+
+QwtPlot3D is not a  program, but a feature-rich Qt/OpenGL-based C++  programming 
+library, providing essentially a  bunch of 3D-widgets for programmers. 
+
+License   Zlib licene
+WebSite   http://qwtplot3d.sourceforge.net/
+
+Test Version
+0.2.7
+________________________________________________________________________________
+
+QtMmlWidget
+
+The QtMmlWidget component renders mathematical formulas written in MathML 2.0.
+QtMmlWidget  implements  the  Presentation  Markup  subset  of  the  MathML  2.0 
+specification. It relies on  the  presence  of  a  unicode  font  for  rendering 
+mathematical symbols.
+
+License   LGPL
+WebSite   ftp://ftp.qt.nokia.com/qt/solutions/lgpl/
+
+Test Version
+2.4.1
+________________________________________________________________________________
+
+   CONFIGURE
+________________________________________________________________________________
+
+On Unix
+
+Set variables in `SemSolver.config' for matching your  build environment.
+_________________________________________________________________________________
+
+On Windows
+
+Set solution properties within  Visual Studio so that all  dependancies will  be 
+found.
+By default the following environment variables are used
+
+ - BOOST_INCLUDE_DIR
+ - BOOST_LIB_DIR
+ - CGAL_INCLUDE_DIR
+ - CGAL_LIB_DIR
+ - TNT_INCLUDE_DIR
+ - JAMA_INCLUDE_DIR
+ - LIBARCHIVE_INCLUDE_DIR
+ - LIBARCHIVE_LIB_DIR
+ - QWT_INCLUDE_DIR
+ - QWT_LIB_DIR
+ - QWTPLOT3D_INCLUDE_DIR
+ - QWTPLOT3D_LIB_DIR
+ - QTMMLWIDGET_INCLUDE_DIR
+ - QTMMLWIDGET_LIB_DIR
+_________________________________________________________________________________
+
+   BUILD
+_________________________________________________________________________________
+
+On Uinx
+
+Run on command window
+$ qmake
+$ make
+_________________________________________________________________________________
+
+On Windows
+
+Build All from build menu.
+_________________________________________________________________________________
+
+Static libraries would be located in `lib' subdirectory and executables in `bin'.
+_________________________________________________________________________________
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="SemSolver-Solver"
+	ProjectGUID="{F4E3B66E-A49B-4507-83D0-FAA2F8DC8CA9}"
+	RootNamespace="SemSolverSolver"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Default|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="."
+			ConfigurationType="10"
+			CharacterSet="2"
+			BuildLogFile=""
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\choleskysolve.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\lusolve.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\qrsolve.hpp"
+				>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
